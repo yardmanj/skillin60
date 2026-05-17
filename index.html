@@ -3,31 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillIn60 — Coming Soon</title>
+    <title>SkillIn60 — Build Your First AI Skill in 60 Minutes</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .container { max-width: 600px; padding: 40px; }
-        .logo { font-size: 3rem; font-weight: 900; margin-bottom: 20px; }
-        .logo span { color: #4ade80; }
-        h1 { font-size: 2rem; margin-bottom: 20px; }
-        p { color: #888; font-size: 1.2rem; }
+        body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #fff; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 30px; }
+        
+        nav { padding: 20px 0; border-bottom: 1px solid #1f1f1f; }
+        .logo-mark { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-icon { background: linear-gradient(135deg, #4ade80, #22c55e); color: #0a0a0a; font-size: 1.1rem; font-weight: 900; width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-top { font-size: 0.95rem; font-weight: 900; color: #fff; letter-spacing: 0.03em; line-height: 1.1; }
+        .logo-bottom { font-size: 0.65rem; font-weight: 600; color: #4ade80; letter-spacing: 0.06em; text-transform: uppercase; }
+        
+        .hero { padding: 80px 0 60px; text-align: center; position: relative; }
+        .eyebrow { color: #4ade80; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; line-height: 1.1; margin-bottom: 25px; letter-spacing: -2px; }
+        .hero h1 span { color: #4ade80; }
+        .hero-sub { font-size: 1.3rem; color: #888; max-width: 650px; margin: 0 auto 40px; }
+        .btn-primary { display: inline-block; background: #4ade80; color: #0a0a0a; padding: 20px 50px; font-weight: 800; font-size: 1.1rem; text-decoration: none; border-radius: 8px; transition: all 0.3s; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(74, 222, 128, 0.3); }
+        .trust { margin-top: 40px; display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; font-size: 0.9rem; color: #666; }
+        
+        .section { padding: 80px 0; }
+        .section-alt { background: #111; }
+        h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 30px; letter-spacing: -1px; }
+        h3 { font-size: 1.4rem; font-weight: 700; margin: 30px 0 15px; }
+        p { margin-bottom: 20px; font-size: 1.1rem; color: #aaa; }
+        
+        .module { background: #111; border: 1px solid #222; padding: 40px; margin: 20px 0; border-radius: 12px; }
+        .module h3 { color: #4ade80; margin-top: 0; }
+        .module ul { margin: 15px 0 0 20px; color: #888; }
+        .module li { margin-bottom: 8px; }
+        
+        .price-box { background: #111; border: 2px solid #4ade80; padding: 60px; border-radius: 16px; text-align: center; max-width: 500px; margin: 40px auto; }
+        .price { font-size: 5rem; font-weight: 900; color: #4ade80; }
+        .price span { font-size: 1.5rem; vertical-align: super; }
+        .original { text-decoration: line-through; color: #666; margin: 20px 0; }
+        
+        .guarantee { background: #0f1f0f; border: 1px solid #4ade80; padding: 40px; border-radius: 12px; text-align: center; margin: 40px 0; }
+        .guarantee h3 { color: #4ade80; margin-bottom: 15px; }
+        
+        footer { padding: 40px 0; text-align: center; color: #666; border-top: 1px solid #1f1f1f; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">SKILL<span>IN60</span></div>
-        <h1>Coming Soon</h1>
-        <p>Build your first AI skill in 60 minutes.<br>No coding required.</p>
-    </div>
+    <nav>
+        <div class="container">
+            <a href="/" class="logo-mark">
+                <div class="logo-icon">60</div>
+                <div class="logo-text">
+                    <span class="logo-top">SKILLIN60</span>
+                    <span class="logo-bottom">Build Your First Skill</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="eyebrow">Humans Are The Bottleneck</div>
+            <h1>Build Your First <span>AI Skill</span> in 60 Minutes<br>(Even If You've Never Coded)</h1>
+            <p class="hero-sub">The step-by-step system that takes you from "I don't know where to start" to "It actually works!" — no coding, no confusion, just results.</p>
+            <a href="#buy" class="btn-primary">Get Instant Access — $47</a>
+            <div class="trust">
+                <span>✓ 5 Modules</span>
+                <span>✓ 15 Video Lessons</span>
+                <span>✓ 7 Skill Templates</span>
+                <span>✓ 30-Day Guarantee</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Here's What You'll Build</h2>
+            <p>By the end of this course, you'll have a working content automation skill that saves you hours every week. More importantly, you'll know how to build ANY skill you can imagine.</p>
+            
+            <div class="module">
+                <h3>Module 1: The 5-Minute Setup</h3>
+                <p>Get OpenClaw configured and ready to build. No guessing, no "figure it out yourself."</p>
+                <ul>
+                    <li>What you'll build today (preview)</li>
+                    <li>Creating your OpenClaw account (step-by-step)</li>
+                    <li>Account verification checklist</li>
+                </ul>
+            </div>
+            
+            <div class="module">
+                <h3>Module 2: Understanding Skills</h3>
+                <p>Learn how skills work before you build. This foundation makes everything easier.</p>
+                <ul>
+                    <li>What is an AI skill? (trigger → action → result)</li>
+                    <li>The SKILL.md framework explained</li>
+                    <li>Your template library overview</li>
+                </ul>
+            </div>
+            
+            <div class="module">
+                <h3>Module 3: Building Your First Skill</h3>
+                <p>The core building phase. Follow along and create your skill in real-time.</p>
+                <ul>
+                    <li>Choosing and customizing your template</li>
+                    <li>Filling in the blanks (worksheet included)</li>
+                    <li>Connecting your tools (click-by-click)</li>
+                </ul>
+            </div>
+            
+            <div class="module">
+                <h3>Module 4: Testing & Debugging</h3>
+                <p>Make sure it works. When something breaks, you'll know exactly how to fix it.</p>
+                <ul>
+                    <li>Running your first test safely</li>
+                    <li>The Troubleshooting Bible (top 5 errors + fixes)</li>
+                    <li>Final polish and error handling</li>
+                </ul>
+            </div>
+            
+            <div class="module">
+                <h3>Module 5: Deployment & Next Steps</h3>
+                <p>Go live and plan your skill-building future.</p>
+                <ul>
+                    <li>Publishing and sharing your skill</li>
+                    <li>7 skill types that sell (and how to build them)</li>
+                    <li>Your 30-day action plan</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="buy">
+        <div class="container">
+            <div class="price-box">
+                <h2 style="margin-bottom: 10px;">SkillIn60 Complete System</h2>
+                <p style="color: #888; margin-bottom: 30px;">Everything you need to build your first skill today</p>
+                <div class="original">Regular Price $97</div>
+                <div class="price"><span>$</span>47</div>
+                <p style="margin: 25px 0;">One-time payment. Lifetime access.</p>
+                <a href="https://buy.stripe.com/3cI3cwdRTgCY6bY09ydQQ00" class="btn-primary">Get Instant Access</a>
+                <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">30-day money-back guarantee</p>
+            </div>
+            
+            <div class="guarantee">
+                <h3>The "First Skill or Money Back" Guarantee</h3>
+                <p>Follow the course. Build your first skill. If you don't have a working skill within 60 minutes, or if you're not satisfied for any reason, email us for a full refund. No questions asked.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 SkillIn60 | anthonyc@agentmail.to</p>
+        </div>
+    </footer>
 </body>
 </html>
